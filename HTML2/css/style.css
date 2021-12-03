@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:5000px
+}
+#sidebar{
+    width: 250px;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.open{
+    transform: translateX(0%) !important;
+}
+
+
+
+#sidebar ul{
+    text-align:  center;
+    margin: 25px 0;
+}
+
+#hideBtn{
+    float:  right;
+    cursor:  pointer;
+}
+
+#sidebar ul li{
+    list-style-type: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 0;
+    cursor: pointer;
+}
